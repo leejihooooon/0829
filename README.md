@@ -244,7 +244,7 @@
 또는 - , = 을 이용하여 h1, h2를 쓸 수 있다. 
 ~~~
 
-예시) 
+(example) 
 ~~~
 # h1
 ## h2
@@ -258,7 +258,7 @@ h2
 --
 ~~~
 
-결과)
+(result)
 
 # h1
 
@@ -284,27 +284,70 @@ h2
 >으로 시작하는 텍스트 
 ~~~
 
-예시)
+(example)
 ~~~
 >This is a first blockqute.
 >>This is a second blockqute.
 >>>This is a third blockqute.
 ~~~
 
-결과)
+(result)
 >This is a first blockqute.
 >>This is a second blockqute.
 >>>This is a third blockqute.
 
+## 3. 목록(List)
+~~~
+순서있는 목록은 숫자와 점을 사용한다.
+~~~
+(example)
+~~~
+1. 첫번째
+2. 두번째
+3. 세번째
+~~~
+(result)
+1. 첫번째
+2. 두번째
+3. 세번째
+~~~
+순서없는 목록는 글머리 기호를 사용한다.
+~~~
+(example)
+~~~
+* 빨강
+  * 녹색
+    * 파랑
 
-## 3. 코드 블럭 Code Blocks
++ 빨강
+  + 녹색
+    + 파랑
+
+- 빨강
+  - 녹색
+    - 파랑
+~~~
+(result)
+* 빨강
+  * 녹색
+    * 파랑
+
++ 빨강
+  + 녹색
+    + 파랑
+
+- 빨강
+  - 녹색
+    - 파랑
+    
+## 4. 코드 블럭 Code Blocks
 
 ~~~
 ```  혹은  ~~~  코드 첫 줄과 마지막 줄에 Back quote (')또는 물결(~) 3개 삽입 
 (3개의 ```또는 ~~~을 사용하여 어떤 언어의 코드인지 명시 할 수 있다.)
 ~~~
 
-예시)
+(example)
 ~~~
 ```
 이것은
@@ -328,7 +371,7 @@ void f(){
 }
 ~~~
 
-결과)
+(result)
 
 ```
 이것은
@@ -349,28 +392,28 @@ void f(){
 ~~~
 
 
-## 4. 인라인 코드 Inline Code Blocks
+## 5. 인라인 코드 Inline Code Blocks
 ~~~
 `(Back quote) ' 로 감싸진 텍스트 
 ~~~
 
-예시)
+(example)
 ~~~
 `인라인 코드 블럭` 
 ~~~
 
-결과)
+(result)
 
 `인라인 코드 블럭` 
 
-## 5. 강조 Emphasis
+## 6. 강조 Emphasis
 
 ~~~
 기울여 쓰기(italic) : ' * ' 또는 ' _ '로 감싼 텍스트 
 굵게쓰기(bold) : ' ** ' 또는 ' __ '로 감싼 텍스트 
 ~~~
 
-예시)
+(example)
 ~~~
 *기울여쓰기(italic)*
 
@@ -381,7 +424,7 @@ _기울여쓰기(italic)_
 __굵게쓰기(bold)__
 ~~~
 
-결과)
+(result)
 
 *기울여쓰기(italic)*
 
@@ -391,14 +434,14 @@ _기울여쓰기(italic)_
 
 __굵게쓰기(bold)__
 
-## 6. 수평선 Horizontal Rules
+## 7. 수평선 Horizontal Rules
 
 ~~~
 - 또는 * 또는 _을 3개 이상 작성 
 (단, '-'을 사용 할 경우 header로 인식할 수 있으니 이 전 라인은 비워 두어야 한다.) 
 ~~~
 
-예시)
+(example)
 ~~~
 ---
 
@@ -407,7 +450,7 @@ __굵게쓰기(bold)__
 ___
 ~~~
 
-결과)
+(result)
 
 ---
 
